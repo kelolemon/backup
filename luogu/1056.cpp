@@ -23,7 +23,6 @@ int main(){
 		scanf("%d%d%d%d",&a,&b,&x,&y);
 		a==x?c[min(b,y)].people++:r[min(a,x)].people++;
 	}
-	//puts("=======");
 	for (int i=1;i<=n;i++) r[i].id=i;
 	for (int i=1;i<=m;i++) c[i].id=i;
 	sort(c+1,c+1+m,cmp),sort(r+1,r+1+n,cmp);
